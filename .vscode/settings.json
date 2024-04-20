@@ -1,0 +1,126 @@
+{
+  // ===============================================================
+  // File: .vscode/settings.json
+  // Date: 2023-11-29
+  // ===============================================================
+  //
+  // ---------------------------------------------------------------
+  // Note: python interpreter should be set in the project settings
+  // ---------------------------------------------------------------
+  //
+  // Absolute path to a file (`.env`) containing environment variable
+  // definitions
+  "python.envFile": "${workspaceFolder}\\.vscode\\dev.env",
+  //
+  // Path to default Python to use when extension loads up for the first time,
+  // no longer used once an interpreter is selected for the workspace. See the
+  // follosing url to understand when this is used 
+  // https://github.com/microsoft/vscode-python/wiki/Setting-descriptions#pythondefaultinterpreterpath
+  // NOTE: `.env` variable can NOT be used here
+  // windows
+  "python.defaultInterpreterPath": "C:\\bin\\venv\\.dev310\\Scripts\\python.exe",
+  //
+  // wsl ubuntu
+  //"python.defaultInterpreterPath": "${workspaceFolder}\\.vm310\\bin\\python.exe",
+  // ---------------------------------------------------------------
+  // Test
+  //
+  // FIXME: refactor with `.env` variable
+  //"python.testing.cwd":"${workspaceFolder}/src/tests",
+  //"python.testing.pytestArgs": [
+  //  "./src"
+  //],
+  //
+  "pythonTestExplorer.testFramework": "pytest",
+  //
+  // FIXME: refactor with `.env` variable
+  // "python.testing.cwd":"${workspaceFolder}\\src",
+  //"python.testing.pytestArgs": ["${workspaceFolder}\\src"],
+  // "pythonTestExplorer.testplanArgs": [
+  // "${workspaceFolder}\\src"
+  // ],
+  //
+  "python.testing.unittestEnabled": false,
+  "python.testing.nosetestsEnabled": false,
+  "python.testing.pytestEnabled": true,
+  //   
+  // ---------------------------------------------------------------
+  // Pylance extension
+  //
+  // FIXME: refactor with `.env` variable
+  "python.analysis.extraPaths": [
+    "src"
+  ],
+  // 
+  //----------------------------------------------------------------
+  // pylint
+  //
+  //"pylint.args": [
+  //    "--ignorePath=src\\xlx\\pkg\\*,src\\tests\\pkg_tests\\*,src\\demos\\pkg\\*,docs\\*"
+  //],
+  //
+  // ---------------------------------------------------------------
+  // Flake8 extension
+  //
+  // "flake8.args": [
+  //   "--max-line-length=79",
+  //   "--ignore=E402,F841,F401,E302,E305,E501",
+  //   "--exclude=`src\\xlx\\pkg\\*,// src\\tests\\pkg_tests\\*,src\\demos\\pkg\\*,docs\\*`"
+  // ],
+  // 
+  // ---------------------------------------------------------------
+  // cSpell extension    
+  // - replace <proj_name> with local project name -> pysm
+  "cSpell.customDictionaries": {
+    "workspace_dictionary": {
+      "name": "workspace_dictionary",
+        "path": "${workspaceFolder:docker_devop}\\.cspell\\workspace_dictionary.dic",
+      "addWords": true,
+      "scope": "workspace"
+    }
+  },
+  // 
+  // ---------------------------------------------------------------
+  // reStructuredText
+  //
+  //root ReadMe.rst
+  // If it is "", then docutils is used to render the preview page.
+  "esbonio.sphinx.confDir": "",
+  "restructuredtext.preview.docutils.disabled": false,
+  //
+  // ---------------------------------------------------------------
+  // Peacock extension
+  // 
+  // color scheme - DarkSlate(Green)Gray -> (#2F4F4F)
+  "peacock.color": "#2F4F4F",
+  "peacock.affectActivityBar": true,
+  "peacock.affectStatusBar": true,
+  "peacock.affectTitleBar": true,
+  "peacock.elementAdjustments": {
+    "activityBar": "lighten"
+  },
+  //
+  // ---------------------------------------------------------------
+    "workbench.colorCustomizations": {
+      "activityBar.activeBackground": "#426f6f",
+      "activityBar.background": "#426f6f",
+      "activityBar.foreground": "#e7e7e7",
+      "activityBar.inactiveForeground": "#e7e7e799",
+      "activityBarBadge.background": "#c49bc4",
+      "activityBarBadge.foreground": "#15202b",
+      "commandCenter.border": "#e7e7e799",
+      "sash.hoverBorder": "#426f6f",
+      "statusBar.background": "#2f4f4f",
+      "statusBar.foreground": "#e7e7e7",
+      "statusBarItem.hoverBackground": "#426f6f",
+      "statusBarItem.remoteBackground": "#2f4f4f",
+      "statusBarItem.remoteForeground": "#e7e7e7",
+      "titleBar.activeBackground": "#2f4f4f",
+      "titleBar.activeForeground": "#e7e7e7",
+      "titleBar.inactiveBackground": "#2f4f4f99",
+      "titleBar.inactiveForeground": "#e7e7e799"
+    },
+  //
+  // wsl - LightGreenYellow(#496d42)
+  "peacock.remoteColor": "#496d42",
+}
